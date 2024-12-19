@@ -1,0 +1,8 @@
+services:
+  indexing:
+      build: ./indexing
+      env_file:
+        - .env
+      volumes:
+        - ${INDEXING_SRC_PATH}:/app/data/raw
+        - ${INDEXING_TARGET_PATH}:/app/data/index
