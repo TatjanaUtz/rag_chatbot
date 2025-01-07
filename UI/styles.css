@@ -1,0 +1,130 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+/* CSS variables for consistent styling */
+:root {
+    --font-family: 'Libre Baskerville', serif;
+    --background-color: #0d0d0d; /* Dark background */
+    --text-color: #e5e5e5; /* Light text color */
+    --container-bg-color: #1a1a1a; /* Slightly lighter container background */
+    --header-bg-color: #740001; /* Gryffindor red */
+    --header-border-color: #d3a625; /* Hufflepuff yellow */
+    --input-bg-color: #2a2a2a; /* Dark input background */
+    --input-border-color: #5a5a5a; /* Neutral border color */
+    --button-bg-color: #0e1a40; /* Ravenclaw blue */
+    --button-text-color: #e5e5e5; /* Light button text color */
+    --message-bg-color: #1a1a1a; /* Same as container background */
+    --focus-color: #2a623d; /* Slytherin green */
+}
+
+/* Basic styling for the body */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color);
+}
+
+/* Styling for the chat container */
+.chat-container {
+    width: 400px;
+    background-color: var(--container-bg-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Styling for the chat header */
+.chat-header {
+    background-color: var(--header-bg-color);
+    color: var(--button-text-color);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid var(--header-border-color);
+}
+
+/* Styling for the chat messages container */
+.chat-messages {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    border-bottom: 1px solid var(--input-border-color);
+}
+
+/* Styling for the input area */
+.chat-input {
+    display: flex;
+    padding: 10px;
+    background-color: var(--input-bg-color);
+}
+
+/* Styling for the input field */
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 4px;
+    background-color: var(--container-bg-color);
+    color: var(--text-color);
+}
+
+/* Focus state for the input field */
+.chat-input input:focus {
+    outline: none;
+    border-color: var(--focus-color);
+    box-shadow: 0 0 5px var(--focus-color);
+}
+
+/* Styling for the send button */
+.chat-input button {
+    padding: 10px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for the send button */
+.chat-input button:hover {
+    background-color: #1e3a5f; /* Darker blue for hover */
+}
+
+/* Focus state for the send button */
+.chat-input button:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--focus-color);
+}
+
+/* Styling for chat messages */
+.message p {
+    margin: 0;
+    padding: 5px;
+    background-color: var(--message-bg-color);
+    border-radius: 4px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* Dark mode styling */
+body.dark-mode {
+    --background-color: #1a1a1a;
+    --text-color: #e5e5e5;
+    --container-bg-color: #2a2a2a;
+    --header-bg-color: #0e1a40;
+    --input-bg-color: #3a3a3a;
+    --button-bg-color: #0e1a40;
+    --message-bg-color: #3a3a3a;
+}

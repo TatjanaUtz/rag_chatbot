@@ -6,3 +6,10 @@ services:
       volumes:
         - ${INDEXING_SRC_PATH}:/app/data/raw
         - ${INDEXING_TARGET_PATH}:/app/data/index
+
+  ui:
+    build: ./UI
+    env_file:
+      - .env
+    ports:
+      - ${UI_PORT}:80
