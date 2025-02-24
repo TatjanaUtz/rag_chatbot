@@ -63,3 +63,4 @@ poetry.lock
 # Ignore repository-specific directories
 data/
 tests/
+vectorstore/
