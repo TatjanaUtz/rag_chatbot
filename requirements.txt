@@ -1,0 +1,14 @@
+gradio
+gradio_pdf
+langchain
+langchain-openai
+langchain-text-splitters
+langchain_chroma
+langchain_community
+langchain_core
+langgraph
+pydantic
+pydantic-settings
+pypdf
+tiktoken
+typing_extensions
