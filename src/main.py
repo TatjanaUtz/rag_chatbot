@@ -112,11 +112,6 @@ if __name__ == "__main__":
                 step=1,
                 label="Number of references",
             ),
-            examples=[
-                ["How can I perform a 3D shape search?", 3],
-                ["How can I narrow down search results across catalogs?", 3],
-                ["What are the differences between the three versions of 3Dfindit?", 3],
-            ],
             additional_outputs=file_outputs,
         )
 
