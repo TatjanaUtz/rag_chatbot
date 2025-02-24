@@ -1,0 +1,64 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore virtual environment directories
+venv/
+env/
+ENV/
+.venv/
+.pyenv/
+
+# Ignore distribution/build directories
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore Docker-related files
+Dockerfile
+docker-compose.yml
+
+# Ignore environment variable files
+.env
+.env.*
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore mypy cache
+.mypy_cache/
+
+# Ignore tox environments
+.tox/
+
+# Ignore pipenv files
+Pipfile.lock
+
+# Ignore poetry files
+poetry.lock
+
+# Ignore repository-specific directories
+tests/
