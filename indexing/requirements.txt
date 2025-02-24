@@ -1,7 +1,0 @@
-langchain
-langchain-huggingface
-langchain_chroma
-langchain_community
-pydantic-settings
-pypdf
-watchdog
