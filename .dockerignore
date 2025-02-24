@@ -61,4 +61,5 @@ Pipfile.lock
 poetry.lock
 
 # Ignore repository-specific directories
+data/
 tests/
