@@ -14,7 +14,7 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from config import IndexingSettings
-from openai_pricing import OPENAI_EMBEDDING_PRICING
+from openai_pricing import OPENAI_EMBEDDINGS_PRICING
 
 config = IndexingSettings()
 embeddings = OpenAIEmbeddings(model=config.openai_model)
@@ -44,7 +44,7 @@ def load_data_chunks(knowledge_base_path: str, chunk_size: int, chunk_overlap: i
 
 def calculate_embedding_cost(chunks: list[Document], openai_model: str) -> None:
     """Calculate and log the cost of embedding the document chunks."""
-    model_cost = OPENAI_EMBEDDING_PRICING[openai_model]
+    model_cost = OPENAI_EMBEDDINGS_PRICING[openai_model]
     encoding = tiktoken.encoding_for_model(openai_model)
     total_tokens = 0
 
