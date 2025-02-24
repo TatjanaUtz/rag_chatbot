@@ -60,6 +60,10 @@ Pipfile.lock
 # Ignore poetry files
 poetry.lock
 
+# Ignore Gradio files
+.gradio/
+
+
 # Ignore repository-specific directories
 data/
 tests/

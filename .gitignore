@@ -134,6 +134,9 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
+# Gradio
+.gradio/
+
 # Ignore repository-specific directories
 data/
 vectorstore/
