@@ -8,7 +8,6 @@ import logging
 from typing import Any
 
 import gradio as gr
-from create_embeddings import vectorstore
 from gradio_pdf import PDF
 from langchain import hub
 from langchain_core.documents import Document
@@ -17,6 +16,7 @@ from langgraph.graph import START, StateGraph
 from typing_extensions import TypedDict
 
 from config import ChatbotSettings
+from create_vectorstore import vectorstore
 
 config = ChatbotSettings()
 
