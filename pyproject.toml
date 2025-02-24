@@ -1,6 +1,21 @@
+[project]
+requires-python = ">=3.12"
+
 [tool.ruff]
-# Allow lines to be as long as 120.
+extend-exclude = ["tests"]
 line-length = 120
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["D104"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
 
 [tool.mypy]
 strict = true
+warn_return_any = false
+plugins = ['pydantic.mypy']
+
+[tool.pytest.ini_options]
+pythonpath = "src"
